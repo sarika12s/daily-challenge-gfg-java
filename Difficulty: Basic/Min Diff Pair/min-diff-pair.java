@@ -1,0 +1,11 @@
+class Solution {
+    public int minDiff(int[] arr) {
+        Arrays.sort(arr);
+        int minDiff =Integer.MAX_VALUE;
+        for(int i=1; i<=arr.length-1; i++){
+           minDiff =Math.min(minDiff,arr[i]-arr[i-1]);
+        }
+        return minDiff;
+        
+    }
+}
